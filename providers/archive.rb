@@ -14,11 +14,11 @@ def load_current_resource
 end
 
 action :extract do
-  package "libarchive12" do
+  package "libarchive" do
     action :nothing
   end.run_action(:install)
 
-  package "libarchive-dev" do
+  package "libarchive-devel" do
     action :nothing
   end.run_action(:install)
 
